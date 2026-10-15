@@ -626,6 +626,11 @@ button { cursor: pointer; border: none; background: none; }
   color: var(--text-muted); font-size: 0.9rem; margin-bottom: 7px; line-height: 1.65;
 }
 .timeline-bullets li strong { color: var(--text); }
+.timeline-bullets li code {
+  font-family: var(--mono); font-size: 0.82em;
+  background: rgba(0,120,212,0.1); border: 1px solid rgba(0,120,212,0.2);
+  border-radius: 4px; padding: 1px 6px; color: #5ba8e5;
+}
 
 .timeline-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .timeline-tags span {
@@ -711,6 +716,31 @@ button { cursor: pointer; border: none; background: none; }
 /* ============================================================
    CONTACT
    ============================================================ */
+.certs-verify {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 12px;
+  margin-top: 36px; padding-top: 28px;
+  border-top: 1px solid var(--border-soft);
+}
+.certs-verify-label {
+  font-family: var(--mono); font-size: 0.68rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--text-faint); margin-right: 4px;
+}
+.verify-link {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 8px 16px; border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  font-size: 0.84rem; font-weight: 500; color: var(--text-muted);
+  transition: all var(--tr);
+}
+.verify-link:hover {
+  border-color: var(--primary); color: var(--primary);
+  background: rgba(0,120,212,0.07);
+  transform: translateY(-2px);
+}
+.verify-icon { font-size: 1rem; }
+
 .contact-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: 16px;
 }
